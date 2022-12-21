@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+//Route::get('/', function () {
+//    return view('index');
+//});
+
+Route::get('/', [App\Http\Controllers\FileUplaodController::class, 'index']);
+Route::get('/fileUpload', [App\Http\Controllers\FileUplaodController::class, 'fileUpload']);
+Route::get('/viewFile/{id}', [App\Http\Controllers\FileUplaodController::class, 'viewFile']);
+Route::post('/fileUpload', [App\Http\Controllers\FileUplaodController::class, 'fileUploadData']);
+

@@ -2,14 +2,14 @@
 @section('content')
 
     <div class="btn-group">
-        <a  href="/" class="btn btn-secondary btn-sm dropdown-toggle" type="button">
+        <a  href="/" class="btn btn-primary btn-sm" type="button">
             Index
         </a>
     </div>
     <div class="btn-group">
-        <button class="btn btn-secondary btn-sm" type="button">
+        <a href="/fileUpload" class="btn btn-primary btn-sm" type="button">
            File Upload
-        </button>
+        </a>
     </div>
     <div class="pt-0 mt-0">
         <table class="table">
@@ -20,10 +20,12 @@
             </tr>
             </thead>
             <tbody>
+            @foreach($files as $file)
             <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
+                <th scope="row">{{$file->name}}</th>
+                <td><a href="{{url('/viewFile/'.$file->id)}}" class="btn btn-primary">View File</a></td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div>
