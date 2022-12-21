@@ -15,6 +15,16 @@
 <body>
 <div class="wrapper">
     <div class="content-wrapper">
+        <div class="btn-group">
+            <a  href="/" class="btn btn-primary btn-sm" type="button">
+                Index
+            </a>
+        </div>
+        <div class="btn-group">
+            <a href="/fileUpload" class="btn btn-primary btn-sm" type="button">
+                File Upload
+            </a>
+        </div>
         @yield('content')
     </div>
 

@@ -34,7 +34,7 @@ class FileUplaodController extends Controller
     {
 
        $input  =  $request->all();
-//       dd($input);
+
         if (isset($input['file'])) {
             $fileName  =$input['file']->getClientOriginalName();
             $file = new File();

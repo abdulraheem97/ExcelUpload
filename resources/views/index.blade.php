@@ -1,16 +1,7 @@
 @extends('main')
 @section('content')
 
-    <div class="btn-group">
-        <a  href="/" class="btn btn-primary btn-sm" type="button">
-            Index
-        </a>
-    </div>
-    <div class="btn-group">
-        <a href="/fileUpload" class="btn btn-primary btn-sm" type="button">
-           File Upload
-        </a>
-    </div>
+
     <div class="pt-0 mt-0">
         <table class="table">
             <thead>

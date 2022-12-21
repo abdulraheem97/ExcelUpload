@@ -3,7 +3,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <table class="table table-dark">
+            <table class="table">
                 <thead>
                 <tr>
                     @foreach($file_data as $data)
@@ -25,7 +25,6 @@
                         @for($b=0;$b<$colcount;$b++)
                             <td>{!! $file_data[$b]->columnValues[$a]->name !!}</td>
                         @endfor
-
                     </tr>
                 @endfor
                 </tbody>
